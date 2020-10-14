@@ -238,7 +238,7 @@ nav ul li a:hover {
   width: 250px;
   /* margin-top:-140px; */
   margin-left: 250px;
-  background-color: black;
+  background: url("../images/foto4.jpg") center;
   border-radius: 50%;
   /* px semakin besar makan semakin melengkung */
 }
