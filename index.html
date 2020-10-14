@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Asep Saepul Pahmit | Web Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- mengambil CSS Eksternal -->
+		<link href="assets/css/style.css" rel="stylesheet"  >
+	</head>
+	<body >
+			<section>
+				<nav >
+					 <div class="toggle">
+						 <button onclick="menu_open()" class="tombol tombol-navigasi">Menu</button>
+					 </div>
+					 <ul style="padding-top:20px;" id="menu-list"  >
+						 <li><a href="#education">Praktikum Multimedia Online</a></li>
+					 </ul>
+				</nav>
+				<div class="banner">
+					<div id="circle3"></div>
+					<div id="circle"></div>
+					<div class="title">
+					<h1 class="name">Rahman Hidayat</h1>
+					<p>PRAKTIKUM MULTIMEDIA ONLINE, <br/>Freelancer and Developer</p>
+
+				</div>
+	       		</div>
+				 <div id="aboutme">
+				 </div>
+			</section>
+		<div id="wrapper">
+
+		<section class="sec3" id="education">
+	      <div class="content content-float">
+					<h1 class="title-content">Daftar Pratikum</h1>
+					<div class="area-card">
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 1</b>
+									<br/>
+									<i>14 Oktober 2020</i>
+								</p>
+								<a href="https://rahman-hdyt.github.io/Multimedia_Online/praktikum_1_1800016003.html" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 2</b>
+									<br/>
+									<i>2010-2013</i>
+								</p>
+								<a href="#modal-smp" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 3</b>
+									<br/>
+									<i>2013-2016</i>
+								</p>
+								<a href="#modal-sma" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 4</b>
+									<br/>
+									<i>2020</i>
+								</p>
+								<a href="#modal-unsika" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+					</div>
+					<div class="area-card">
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 1</b>
+									<br/>
+									<i>14 Oktober 2020</i>
+								</p>
+								<a href="#modal-sd" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 2</b>
+									<br/>
+									<i>2010-2013</i>
+								</p>
+								<a href="#modal-smp" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 3</b>
+									<br/>
+									<i>2013-2016</i>
+								</p>
+								<a href="#modal-sma" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" style="background:url('assets/images/SD.jpg') ;background-size : cover;">
+							</div>
+							<div class="card-body">
+								<p style="color:#fff">
+									<b>Praktikum 4</b>
+									<br/>
+									<i>2020</i>
+								</p>
+								<a href="#modal-unsika" class="tombol tombol-link">Detail</a>
+							</div>
+						</div>
+					</div>
+			</div>
+			<svg  id="curve2"
+					viewBox="0 0 1400 214.953"
+					 xml:space="preserve">
+				<path style = "opacity:1;fill:;" d ="M0,139.29C207.803,40.048,277.683-60.968,472.864,45.364
+					c195.181,106.331,346.987,163.042,481.928,77.975c134.939-85.065,337.348-34.515,437.348,41.225c100,75.743,7.861,6.627,7.861,6.627
+					v73.387H0V139.29z"></path>
+			</svg>
+			</section>
+
+		</div>
+		<script type="text/javascript">
+			function menu_open() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " tampilkan";
+				tombol_navigasi.setAttribute('onclick', 'menu_close()');
+			}
+
+			function menu_close() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " hidden";
+				tombol_navigasi.setAttribute('onclick', 'menu_open()');
+			}
+		</script>
+	</body>
+</html>
