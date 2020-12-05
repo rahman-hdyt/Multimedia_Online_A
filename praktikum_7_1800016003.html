@@ -156,7 +156,7 @@
         function drawTimeDomain() {
             clearCanvas();
             for (var i = 0; i < amplitudeArray.length; i++) {
-                var value = amplitudeArray[i] / 400;
+                var value = amplitudeArray[i] / 100;
                 var y = canvasHeight - (canvasHeight * value) - 1;
                 var x = i * canvasWidth / amplitudeArray.length;
                 var clr = ['red', '#c22144', 'yellow'];
