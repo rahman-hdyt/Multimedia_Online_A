@@ -159,9 +159,9 @@
                 var value = amplitudeArray[i] / 300;
                 var y = canvasHeight - (canvasHeight * value) - 1;
                 var x = i * canvasWidth / amplitudeArray.length;
-                var clr = ['red', 'blue', 'yellow'];
+                var clr = ['red', '#c22144', 'yellow'];
                 var color = Math.floor(Math.random() * 10);
-                ctx.fillStyle = 'blue';
+                ctx.fillStyle = '#c22144';
                 ctx.fillRect(x, 0, 2, y);
             }
         }
